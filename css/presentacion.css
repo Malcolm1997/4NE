@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    display: flex;
+}
+
+div{
+    width: 50vw;
+    height: 100vh;
+    position:relative;
+    z-index:1;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 2s ease;
+    background-color: #c2d4b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+div:hover .overlay {
+    opacity: .95;
+}
+
+.overlay a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:30px;
+    text-decoration: none;
+}
+
+.overlay a span{
+    padding-top: 15px;
+    color: #646c65  ;
+}
+
+div:hover .overlay .logoSeleccionable{
+    opacity: 1;
+}
+
+.imgPresentacion{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.renovables{
+    background-color:#e2b777 
+}
