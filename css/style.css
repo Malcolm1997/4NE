@@ -7,15 +7,10 @@
 
 .titleContacto{
     text-align: center;
-    margin: 4.5% 0;
     font-size: 2.5em;
-    padding: 4.5% 0 0;
+    padding: 4.5% 0;
 }
 
-body{
-    background: url(../img/BG1_low.jpg) no-repeat, url(../img/Ingenieria.jpg) top no-repeat;
-    
-}
 
 
 
@@ -39,7 +34,6 @@ body{
 }
 
 .contentCard{
-    margin:40px 0;
     padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +63,13 @@ footer{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin: 40px;
+    margin: 0 40px;
+}
+
+.contactFott h3{
+    font-weight: 400;
+    margin: 20px 0;
+
 }
 
 .contactFott span{
@@ -93,35 +93,64 @@ footer{
 
 /* Nav */
 
-.navbar{
-    background-color: rgba(221,206,159,0.86)
-
-}
-
 nav{
     display: flex;
     align-items: center;
+    height:100%;
 }
 
 .navbar{
+    background-color: rgba(221,206,159,0.86);
     display: flex;
     justify-content:space-between;
-    padding: 20px;
+    align-items: center;
+    height: 10vh;
 }
 
 .listNav{
     display: flex;
     list-style: none;
-
+    height:100%;
 }
 
-.listNav li{
+.listNav > li{
     margin: 0 20px;
+    float:left;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.listNav li ul{
+    display: none;
+    position:absolute;
+    min-width:140px;
+    top: 10vh;
+    border-top: rgb(129, 228, 255) 1px solid;
+    background:white;
+    list-style: none;
+    padding: 0 10px 10px;
+    box-shadow: 0px 5px 5px -0px black;;
+}
+
+.listNav li:hover > ul{
+    display:block;
+}
+
+.listNav li ul li {
+    position:relative;
+    padding:10px 3px
+}
+
+.listNav li ul li ul{
+    right: -140px;
+    top: 0px
 }
 
 a{
     text-decoration: none;
     color: #3a3a3a;
+    display:block;
 }
 
 .navLogo{
@@ -135,7 +164,14 @@ a{
 
 .navbar h1{
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.presentacionBaja{
+    background-color: rgba(221,206,159,1) ;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 1.5em;
 }
 
 /* box */
@@ -147,8 +183,9 @@ a{
 .box{
     padding:5% 15%;
     transform: translateX(400%);
-    transition: transform 1.5s ease;
+    transition: transform 1s ease;
     display: flex;
+    visibility: hidden;
     align-items: center;
     justify-content:space-between
 }
@@ -164,12 +201,28 @@ a{
 }
 
 .box.show{
+    visibility:visible;
     transform: translateX(0)
 }
 
 .boxDentro{
     padding: 0 5%;
+    font-size: 1.5em;
 }
+
+.boxDentro h3{
+    text-align: center;
+    font-size:3em;
+    font-weight: 500;
+}
+
+.boxDentro p{
+    font-weight: 300;
+}
+
+.boxDentro h3, .boxDentro p{
+    padding: 8px 0;
+} 
 
 
 
@@ -179,13 +232,34 @@ a{
     border-radius: 10px;
 }
 
+.backMain{
+    background:url(../img/Ingenieria.jpg) bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6% 0;
+}
+
 
 .presentacionSolu{
-    padding: 400px 0;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 50px;
     color: white;
-    background:rgba(0, 0, 0, .4)
+    background: rgba(0,0,0,.4);
+    background-size: cover;
+    padding:40vh 0
 }
+
+.topPresentacionSolu{
+    background: url(../img/BG1_low.jpg) no-repeat;
+    background-size: cover;
+    height:75%;
+    background-attachment: fixed;
+}
+
+.headerInicio{
+    height:100vh
+}
+
+
