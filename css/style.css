@@ -223,6 +223,20 @@ a{
     padding: 8px 0;
 }
 
+.divVerMas{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.btnVerMas{
+    margin: 20px 0px;
+    padding: 15px 25px ;
+    display:inline;
+    background:rgba(221,206,159,1);
+    border-radius: 10px;
+    border: 2.5px solid black;
+    color:black
+}
 
 
 .mainContact{
@@ -259,6 +273,10 @@ a{
 
 .headerInicio{
     height:100vh
+}
+
+.linkFooter{
+    display: inline;
 }
 
 
