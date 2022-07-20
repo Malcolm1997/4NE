@@ -146,8 +146,8 @@ nav{
 }
 
 .listNav li ul li a {
-    
-    padding:15px 15px
+    border-bottom: 1px solid black;
+    padding:12px 15px
 }
 
 .listNav li ul li:hover{
@@ -360,4 +360,38 @@ a{
 .mainProyecto img{
     width:30%;
     border-radius: 15px;
+}
+
+/* Acerca de nostros */
+
+.sectionAcerca{
+    display:flex;
+    align-items: center;
+    height:30vh;
+    justify-content:center;
+}
+
+.sectionAcerca h2 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.mainAcerca{
+    width:80%;
+    margin: 0 10% 5%;
+    text-align: center;
+}
+
+.sectionNosotros{
+    margin: 5%;
+    font-size: 1.35em;
+    line-height: 1.5em;
+}
+
+.sectionNosotros h2{
+    margin: 3% 0;
+}
+
+.sectionNosotros p{
+    margin: 3% 0;
 }
