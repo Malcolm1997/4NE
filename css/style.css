@@ -395,3 +395,26 @@ a{
 .sectionNosotros p{
     margin: 3% 0;
 }
+
+.contentAlianza{
+    display: flex;
+    justify-content:space-around;
+}
+
+.contentAlianzaUnico{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:35%;
+    margin: 5%;
+}
+.contentAlianzaUnico .beming{
+    padding:10px;
+    background: #302c2c;
+    border-radius: 15px;
+}
+
+.contentAlianzaUnico img{
+    object-fit: contain;
+    width:100%;
+}
