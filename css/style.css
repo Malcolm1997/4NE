@@ -93,6 +93,12 @@ footer{
 
 /* Nav */
 
+@media (min-width:1025px) {
+    .menuHamburg{
+        display:none !important
+    }
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -128,7 +134,7 @@ nav{
     border-top: rgb(129, 228, 255) 1px solid;
     background:white;
     list-style: none;
-
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 
@@ -146,7 +152,6 @@ nav{
 }
 
 .listNav li ul li a {
-    border-bottom: 1px solid black;
     padding:12px 15px
 }
 
@@ -192,6 +197,55 @@ a{
     padding: 35px 0;
     font-size: 1.5em;
 }
+
+/* Menu Hamburguesa*/
+
+
+@media (max-width: 1024px) {
+
+    .navbar input[type = "checkbox"], .navbar .fa-bars, .navbar .fa-times{
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .navbar .fa-bars, .navbar .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+    }
+    
+    .navbar input[type="checkbox"] {
+        opacity: 0;
+    }
+    
+    .navbar {
+        position: relative;
+        min-height: 48px;
+    }
+    
+    .navbar nav {
+        display: none;
+    }
+    
+    .navbar input:checked ~ nav {
+        display: block;
+    }
+    
+    .navbar input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .navbar input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
+}
+
 
 /* box */
 
@@ -308,11 +362,48 @@ a{
 }
 
 
-/* Proyectos */
+/* Servicios */ 
 
-.headerProyecto{
+.headerServicios{
     height:60vh;
 }
+
+.mainServiciosPrincipal{
+    width:80%;
+    margin: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.cardServicios{
+    width:35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 5%;
+    border-radius: 10px;
+    background: url(../img/Ingenieria.jpg);
+    background-size:cover;
+}
+
+.cardServicios h3{
+    margin: 15% 0;
+    font-size:2rem;
+    background: white;
+    padding: 1%  5%;
+    border-radius: 5px;
+}
+
+.cardServicios a {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius:25px;
+    margin-bottom:20%
+}
+
+/* Paginas de Servicios */
 
 .headerTitulo{
     background: url(../img/aaaada.jpg) no-repeat;
@@ -335,7 +426,7 @@ a{
     font-weight: 400;
 }
 
-.mainProyecto{
+.mainServicios{
     margin:4% 9% ;
     padding: 1%;
     border-radius: 10px;
@@ -343,23 +434,116 @@ a{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-.mainProyecto section{
+.mainServicios section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size:2em
 }
 
-
-
-.mainProyecto p{
+.mainServicios p{
     width:60%;
     display:inline-block
 }
 
-.mainProyecto img{
+.mainServicios img{
     width:30%;
     border-radius: 15px;
+}
+
+/* Proyectos */
+
+.mainProyectos{
+    width:80%;
+    margin: 5% 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.mainProyectos section{
+    width:50vh;
+    border-right: solid 1px black;
+}
+
+.proyectoTipoTitulo{
+    font-size: 3rem;
+    font-weight:400;
+    margin-bottom:15%
+}
+
+.mainProyectos li {
+    list-style: none;
+    padding: 5vh 0;
+}
+
+/* Paginas de proyectos */
+
+.mainProyectosPaginas{
+    width:80%;
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectoBody{
+    border-radius:25px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content:space-around;
+    margin: 1% 5% ;
+    align-items: center;
+}
+
+.proyectoBody section{
+    width:40%;
+    margin: 5% ;
+
+    display: flex;
+    justify-content:center
+}
+
+.datosTecnicos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datosTecnicos h4, .descSimple h4{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 30px;
+}
+
+.datosTecnicos ul{
+    width:100%
+}
+
+.datosTecnicos li{
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content:space-between
+}
+
+
+.descSimple{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.descSimple h4{
+    text-align: center;
+    margin:  0 0 50px;
+}
+
+.imgProyecto img{
+    width:80%;
+    object-fit:cover;
+    border-radius:10px
 }
 
 /* Acerca de nostros */
