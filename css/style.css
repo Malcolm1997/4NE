@@ -93,7 +93,7 @@ footer{
 
 /* Nav */
 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
     .menuHamburg{
         display:none !important
     }
@@ -198,53 +198,6 @@ a{
     font-size: 1.5em;
 }
 
-/* Menu Hamburguesa*/
-
-
-@media (max-width: 1024px) {
-
-    .navbar input[type = "checkbox"], .navbar .fa-bars, .navbar .fa-times{
-        position: absolute;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        right: 0;
-        top: 0;
-        width: 48px;
-        height: 48px;
-    }
-    
-    .navbar .fa-bars, .navbar .fa-times {
-        font-size: 48px;
-        pointer-events: none;
-    }
-    
-    .navbar input[type="checkbox"] {
-        opacity: 0;
-    }
-    
-    .navbar {
-        position: relative;
-        min-height: 48px;
-    }
-    
-    .navbar nav {
-        display: none;
-    }
-    
-    .navbar input:checked ~ nav {
-        display: block;
-    }
-    
-    .navbar input:checked ~ .fa-bars {
-        display: none;
-    }
-    
-    .navbar input:not(:checked) ~ .fa-times {
-        display: none;
-    }
-    
-}
 
 
 /* box */
@@ -378,9 +331,6 @@ a{
 
 .cardServicios{
     width:35vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 5%;
     border-radius: 10px;
@@ -388,10 +338,20 @@ a{
     background-size:cover;
 }
 
+.cardServicios div{
+    width:100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+}
+
 .cardServicios h3{
     margin: 15% 0;
+    color: white;
     font-size:2rem;
-    background: white;
+    font-weight: 500;
     padding: 1%  5%;
     border-radius: 5px;
 }
@@ -401,6 +361,10 @@ a{
     background-color: white;
     border-radius:25px;
     margin-bottom:20%
+}
+
+.cardServicios a:hover{
+    background:rgb(200, 200, 200)
 }
 
 /* Paginas de Servicios */
@@ -475,6 +439,25 @@ a{
 .mainProyectos li {
     list-style: none;
     padding: 5vh 0;
+    font-size: 1.5rem;
+    
+}
+
+.mainProyectos li span{
+    padding: 15px;
+} 
+
+.mainProyectos li a{
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(220, 190, 99);
+    display: inline-block;
+}
+
+.mainProyectos li a:hover{
+    color: rgb(208, 158, 11);
+
 }
 
 /* Paginas de proyectos */
@@ -601,4 +584,82 @@ a{
 .contentAlianzaUnico img{
     object-fit: contain;
     width:100%;
+}
+
+/* Menu Hamburguesa*/
+
+
+@media (max-width: 1023px) {
+
+    header{
+        width:100%;
+    }
+
+    nav{
+        height:auto;
+        width:100%
+    }
+
+    .listNav{
+        flex-direction: column;
+        align-items: center;
+        font-size:4em;
+        margin-top:5%;
+    }
+    
+    .backMain{
+        padding: 15vh 0;
+    }
+
+    .linkNav{
+        padding: 5% 0;
+    }
+
+    .navbar input[type = "checkbox"], .navbar .fa-bars, .navbar .fa-times{
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 15px;
+        width: 42px;
+        height: 48px;
+    }
+    
+    .navbar .fa-bars, .navbar .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+    }
+    
+    .navbar input[type="checkbox"] {
+        opacity: 0;
+    }
+    
+    .navbar {
+        position: relative;
+        min-height: 48px;
+        height:100%;
+        flex-direction: column;
+        padding: 2.5vh;
+    }
+
+    .headerInicio, .headerServicios{
+        height:auto;
+    }
+    
+    .navbar nav {
+        display: none;
+    }
+    
+    .navbar input:checked ~ nav {
+        display: block;
+    }
+    
+    .navbar input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .navbar input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
 }
