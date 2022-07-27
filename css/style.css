@@ -34,7 +34,6 @@
 }
 
 .contentCard{
-    padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -94,9 +93,24 @@ footer{
 /* Nav */
 
 @media (min-width:1024px) {
-    .menuHamburg{
+
+    .navbarNormal{
+        padding: 0;
+    }
+
+    .navbarHambuguesa{
         display:none !important
     }
+
+    ol, ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover{
+        color: #302c2c;
+    }
+
 }
 
 nav{
@@ -276,7 +290,7 @@ a{
 
 .mainContact{
     background:rgba(255, 255, 255, .8);
-    margin: 0 10%;
+    margin: 0 5%;
     border-radius: 10px;
 }
 
@@ -597,7 +611,11 @@ a{
 
     nav{
         height:auto;
-        width:100%
+        width:100%;
+    }
+
+    .navbarNormal{
+        display:none
     }
 
     .listNav{
@@ -608,30 +626,11 @@ a{
     }
     
     .backMain{
-        padding: 15vh 0;
+        padding: 10vh 0;
     }
 
     .linkNav{
         padding: 5% 0;
-    }
-
-    .navbar input[type = "checkbox"], .navbar .fa-bars, .navbar .fa-times{
-        position: absolute;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        right: 15px;
-        width: 42px;
-        height: 48px;
-    }
-    
-    .navbar .fa-bars, .navbar .fa-times {
-        font-size: 48px;
-        pointer-events: none;
-    }
-    
-    .navbar input[type="checkbox"] {
-        opacity: 0;
     }
     
     .navbar {
@@ -639,27 +638,38 @@ a{
         min-height: 48px;
         height:100%;
         flex-direction: column;
-        padding: 2.5vh;
     }
 
     .headerInicio, .headerServicios{
         height:auto;
     }
     
-    .navbar nav {
-        display: none;
+    .box{
+        transform: translateX(0);
     }
-    
-    .navbar input:checked ~ nav {
-        display: block;
+
+    .box:nth-of-type(even){
+        transform: translateX(0%)
     }
+
+    /* Contacto */
     
-    .navbar input:checked ~ .fa-bars {
-        display: none;
+    .mainContact{
+        margin: 0 1%;
     }
-    
-    .navbar input:not(:checked) ~ .fa-times {
-        display: none;
+
+    .mainContact h3{
+        font-size: 2.5em;
     }
-    
+
+    .contentCard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactoCard{
+        width:95%;
+        margin: 20px 0px;
+        font-size: 1.1em;
+    }
 }
