@@ -52,9 +52,9 @@ footer{
 
 .footerContact{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     padding: 40px  0;
-
+    align-items: center;
 }
 
 .contactFott{
@@ -63,6 +63,11 @@ footer{
     justify-content:center;
     align-items: center;
     margin: 0 40px;
+    width: 40%;
+}
+
+.contactFott img{
+    width: 50%;
 }
 
 .contactFott h3{
@@ -194,6 +199,13 @@ a{
 .navLogo{
     display: flex;
     align-items:center;
+    height: 80%;
+}
+
+.navLogo a, .navLogo img  {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navbar img, .navbar h1{

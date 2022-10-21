@@ -43,6 +43,7 @@ div:hover .overlay {
     align-items: center;
     font-size:30px;
     text-decoration: none;
+    width: 100%;
 }
 
 .overlay a span{
@@ -52,6 +53,10 @@ div:hover .overlay {
 
 div:hover .overlay .logoSeleccionable{
     opacity: 1;
+}
+
+.logoSeleccionable {
+    width: 80%;
 }
 
 .imgPresentacion{
