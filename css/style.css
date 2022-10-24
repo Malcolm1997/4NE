@@ -446,15 +446,14 @@ a{
 /* Proyectos */
 
 .mainProyectos{
-    width:80%;
-    margin: 5% 10%;
+    margin: 5% 2.5%;
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
 
 .mainProyectos section{
-    width:50vh;
+    width:90%;
     border-right: solid 1px black;
 }
 
@@ -673,13 +672,61 @@ a{
     .headerInicio, .headerServicios{
         height:auto;
     }
+
+    .presentacionBaja{
+        padding: 5%;
+    }
     
     .box{
         transform: translateX(0);
+        padding: 5%;
+        transition: none;
+        visibility:visible;
     }
 
     .box:nth-of-type(even){
         transform: translateX(0%)
+    }
+
+
+
+
+    /* Proyectos */
+
+    .mainProyectosPaginas{
+        width: 90%;
+        margin: auto 5%;
+    }
+
+    .mainProyectosPaginas h4{
+        font-size: 2.5em;
+        margin: 15% 0;
+    }
+
+    .mainProyectosPaginas p{
+        font-size: 1.5em;
+        text-align: center;
+        padding: 2.5%;
+    }
+
+    .proyectoBody{
+        flex-direction: column;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .proyectoBody section{
+        width: 90%;
+        margin: 0 5% 20%  ;
+    }
+
+    .proyectoBody ul{
+        padding: 0;
+        margin: 5%;
+    }
+
+    .proyectoBody li{
+        margin: 0 5%;
     }
 
     /* Contacto */
@@ -706,6 +753,41 @@ a{
 
 @media (max-width: 768px){
     
+    /* Index */
+
+    .box{
+        flex-direction: column;
+    }
+
+    .boxImg{
+        display: none;
+    }
+
+    .topPresentacionSolu{
+        background-position: center;
+    }
+
+    .presentacionSolu{
+        text-align: center;
+    }
+
+    .presentacionSolu span{ 
+        padding: 5%;
+    }
+
+    .divVerMas{
+        width: 100%;
+    }
+
+    .btnVerMas{
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentacionSolu{
+        padding: 25vh;
+    }
+
     /* Servicios */
 
     .mainServicios section{
@@ -731,6 +813,11 @@ a{
 
     .proyectoTipoTitulo{
         margin-top: 10%;
+    }
+
+
+    .mainProyectosPaginas p{
+        font-size: .9em;
     }
 
     /* Acerca de nosotros */
@@ -775,6 +862,16 @@ a{
 
     .headerTitulo h2{
         font-size: 1.5em;
+    }
+
+    /* Index */
+
+    .boxText{
+        font-size: 1em;
+    }
+
+    .presentacionSolu{
+        padding: 20vh;
     }
 
     /* Servicios */
