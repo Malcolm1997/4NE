@@ -396,7 +396,7 @@ a{
 /* Paginas de Servicios */
 
 .headerTitulo{
-    background: url(../img/aaaada.jpg) no-repeat;
+    background: url(../img/fondoPortada.webp) no-repeat;
     background-size: cover;
     height:50vh;
     font-size: 2.5em;
@@ -478,12 +478,12 @@ a{
     border-top: 1px solid black;
     margin-top: 15px;
     padding: 10px;
-    color: rgb(145, 111, 11);
+    color: rgb(220, 190, 99);
     display: inline-block;
 }
 
 .mainProyectos li a:hover{
-    color: rgb(184, 155, 68);
+    color: rgb(208, 158, 11);
 
 }
 
@@ -519,10 +519,11 @@ a{
     align-items: center;
 }
 
-.datosTecnicos h4, .descSimple h4{
-    font-size: 3rem;
+.datosTecnicos h3, .descSimple h3{
+    font-size: 2rem;
     font-weight: 300;
     margin: 30px;
+    text-align: center;
 }
 
 .datosTecnicos ul{
@@ -705,7 +706,6 @@ a{
 
     .mainProyectosPaginas p{
         font-size: 1.5em;
-        text-align: center;
         padding: 2.5%;
     }
 
@@ -717,7 +717,11 @@ a{
 
     .proyectoBody section{
         width: 90%;
-        margin: 0 5% 20%  ;
+        margin: 0 5% 12%  ;
+    }
+
+    .spanDerCaract{
+        text-align: end;
     }
 
     .proyectoBody ul{
@@ -862,6 +866,8 @@ a{
 
     .headerTitulo h2{
         font-size: 1.5em;
+        text-align: center;
+        margin: 0 5%;
     }
 
     /* Index */
