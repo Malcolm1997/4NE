@@ -493,6 +493,24 @@ a{
 
 }
 
+.direcc{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contactoCard h3{
+    font-size: 1em;
+    text-align: center;
+}
+
+.contactoCard span{
+    font-size: .85em;
+}
+
+.cardServicios{
+    text-align: center;
+}
+
 /* Paginas de proyectos */
 
 .mainProyectosPaginas{

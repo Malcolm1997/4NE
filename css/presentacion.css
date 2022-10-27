@@ -51,6 +51,7 @@ div:hover .overlay {
 .overlay a span{
     padding-top: 15px;
     color: #646c65;
+    font-size: 1.5em;
 }
 
 div:hover .overlay .logoSeleccionable{
