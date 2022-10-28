@@ -326,11 +326,10 @@ a{
 }
 
 .topPresentacionSolu{
-    background: url(../img/caños.webp) no-repeat;
+    background: url(../img/BG1_low.webp) no-repeat;
     background-size: cover;
     height:75%;
     background-attachment: fixed;
-    background-position: center;
 }
 
 .headerInicio{
@@ -397,11 +396,10 @@ a{
 /* Paginas de Servicios */
 
 .headerTitulo{
-    background: url(../img/ingTrabajando.webp) no-repeat;
+    background: url(../img/fondoPortada.webp) no-repeat;
     background-size: cover;
     height:50vh;
     font-size: 2.5em;
-    background-position: center;
 }
 
 .headerTitulo div{
@@ -628,20 +626,6 @@ a{
 
 .mapMobile{
     display:none;
-}
-
-.direcc{
-    margin-top: 5%;
-    text-align: center;
-}
-
-.contactoCard h3{
-    font-size: 1em;
-    text-align: center;
-}
-
-.contactoCard span{
-    font-size: .85em;
 }
 
 /* Menu Hamburguesa*/
