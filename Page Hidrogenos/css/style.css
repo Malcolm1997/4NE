@@ -260,13 +260,16 @@ a{
 .boxImg, .boxText{
     padding: 0 5%;
     font-size: 1.5em;
-    height:50%;
+    width:50%;
 }
 
+.boxTextNoticia{
+    width: 100%;
+}
 
-.boxText h3{
+.boxText h2{
     text-align: center;
-    font-size:3em;
+    font-size:2em;
     font-weight: 500;
 }
 
@@ -275,9 +278,23 @@ a{
     padding: 8px 0;
 }
 
+.boxTextNoticia p, .boxTextNoticia img{
+    padding: 0 5%;
+    margin: 5% 0;
+}
+
 .divVerMas{
     display:flex;
     justify-content:flex-end;
+}
+
+.btnVerMasNoticia{
+    width: 80%;
+    text-align: center;
+}
+
+.divVerMasNoticia{
+    justify-content: center;
 }
 
 .btnVerMas{
