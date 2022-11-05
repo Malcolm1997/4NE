@@ -1,0 +1,947 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family:Roboto
+}
+
+.titleContacto{
+    text-align: center;
+    font-size: 4em;
+    padding: 4.5% 0;
+}
+
+
+
+
+/* Card de contacto */
+
+.contactoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 1.5%;
+    width:40%;
+    align-items: center;
+    border-radius: 15px;
+    margin: 30px 25px;
+    font-size:1.25em;
+    background: linear-gradient(-10deg, #c2d4b9 50%, rgba(255, 255, 255, 0.5) 50%);
+}
+
+.contactoCard section {
+    margin: 8px 0;
+}
+
+.contentCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+i{
+    margin-right: 8px ;
+}
+
+/* Fotter */
+
+footer{
+    background-color: rgba(221,206,159,0.86)
+
+}
+
+.footerContact{
+    display:flex;
+    justify-content:space-evenly;
+    padding: 40px  0;
+    align-items: center;
+}
+
+.contactFott{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 0 40px;
+    width: 40%;
+}
+
+.contactFott img{
+    width: 50%;
+}
+
+.contactFott h3{
+    font-weight: 400;
+    margin: 20px 0;
+
+}
+
+.contactFott span{
+    margin: 10px 0;
+}
+
+.textInsti{
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3a;
+    color: white;
+    border-top: white 1px solid;
+}
+
+.textInsti h5{
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+/* Nav */
+
+@media (min-width:1024px) {
+
+    .navbarNormal{
+        padding: 0;
+    }
+
+    .navbarHambuguesa{
+        display:none !important
+    }
+
+    ol, ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover{
+        color: #302c2c;
+    }
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+
+.navbar{
+    background-color: rgba(221,206,159,0.86);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.listNav{
+    display: flex;
+    list-style: none;
+    height:100%;
+}
+
+.listNav > li{
+    float:left;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.listNav li ul{
+    display: none;
+    position:absolute;
+    min-width:140px;
+    top: 10vh;
+    border-top: rgb(129, 228, 255) 1px solid;
+    background:white;
+    list-style: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+
+.listNav li:hover > ul{
+    display:block;
+}
+
+.listNav > li:hover{
+    background:rgba(221,206,159,0.86)
+}
+
+.listNav li ul li {
+    position:relative;
+}
+
+.listNav li ul li a {
+    padding:12px 15px
+}
+
+.listNav li ul li:hover{
+    background-color: #dadada84;
+}
+
+.listNav li ul li ul{
+    right: -140px;
+    top: -1px
+}
+
+a{
+    text-decoration: none;
+    color: #3a3a3a;
+    display:block;
+}
+
+.linkNav{
+    padding: 0 20px;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.navLogo{
+    display: flex;
+    align-items:center;
+    height: 80%;
+}
+
+.navLogo a, .navLogo img  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img, .navbar h1{
+    margin: 0 20px;
+}
+
+.navbar h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.presentacionBaja{
+    background-color: rgba(221,206,159,1) ;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 1.5em;
+}
+
+
+
+/* box */
+
+.boxContent{
+    background-color: white;
+}
+
+.box{
+    padding:5% 15%;
+    transform: translateX(200%);
+    transition: transform 1.5s ease;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content:space-between
+}
+
+
+.box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-200%)
+}
+
+.box.show{
+    visibility:visible;
+    transform: translateX(0)
+}
+
+.boxImg, .boxText{
+    padding: 0 5%;
+    font-size: 1.5em;
+    height:50%;
+}
+
+
+.boxText h3{
+    text-align: center;
+    font-size:3em;
+    font-weight: 500;
+}
+
+.boxText p{
+    font-weight: 300;
+    padding: 8px 0;
+}
+
+.divVerMas{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.btnVerMas{
+    margin: 20px 0px;
+    padding: 10px 30px ;
+    display:inline;
+    font-style: italic;
+    font-size: .85em;
+    border: 2.5px solid black;
+    color:black
+}
+
+.btnVerMas:hover{
+    background:rgba(235, 235, 235, 1);
+    border: 2.5px solid rgba(0,0,0,.7);
+}
+
+.btnVerMas:active{
+    padding: 11.5px 31.5px;
+    border: 1px solid rgba(0,0,0,.7);
+}
+
+.mainContact{
+    background:rgba(255, 255, 255, .8);
+    margin: 0 5%;
+    border-radius: 10px;
+}
+
+.backMain{
+    background:url(../img/Ingenieria.webp) bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6% 0;
+}
+
+
+.presentacionSolu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    color: white;
+    background: rgba(0,0,0,.4);
+    background-size: cover;
+    padding:40vh 0
+}
+
+.topPresentacionSolu{
+    background: url(../img/BG1_low.webp) no-repeat;
+    background-size: cover;
+    height:75%;
+    background-attachment: fixed;
+}
+
+.headerInicio{
+    height:100vh
+}
+
+.linkFooter{
+    display: inline;
+}
+
+
+/* Servicios */ 
+
+.headerServicios{
+    height:60vh;
+}
+
+.mainServiciosPrincipal{
+    width:80%;
+    margin: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.cardServicios{
+    width:35vh;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 5%;
+    border-radius: 10px;
+    background: url(../img/Ingenieria.webp);
+    background-size:cover;
+}
+
+.cardServicios div{
+    width:100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+}
+
+.cardServicios h3{
+    margin: 15% 0;
+    color: white;
+    font-size:2rem;
+    font-weight: 500;
+    padding: 1%  5%;
+    border-radius: 5px;
+}
+
+.cardServicios a {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius:25px;
+    margin-bottom:20%
+}
+
+.cardServicios a:hover{
+    background:rgb(200, 200, 200)
+}
+
+/* Paginas de Servicios */
+
+.headerTitulo{
+    background: url(../img/fondoPortada.webp) no-repeat;
+    background-size: cover;
+    height:50vh;
+    font-size: 2.5em;
+}
+
+.headerTitulo div{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+}
+
+.headerTitulo h2{
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+
+}
+
+.mainServicios{
+    margin:4% 9% ;
+    padding: 1%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.mainServicios h3{
+    text-align: center;
+    font-size: 2em;
+    margin: 5% 0;
+}
+
+.mainServicios section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:1.5em
+}
+
+.mainServicios p{
+    width:45%;
+    display:inline-block;
+}
+
+.mainServicios img{
+    width:30%;
+    border-radius: 15px;
+}
+
+/* Proyectos */
+
+.mainProyectos{
+    margin: 5% 2.5%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.mainProyectos section{
+    width:90%;
+    border-right: solid 1px black;
+}
+
+.proyectoTipoTitulo{
+    font-size: 3rem;
+    font-weight:400;
+    margin-bottom:15%
+}
+
+.mainProyectos li {
+    list-style: none;
+    padding: 5vh 0;
+    font-size: 1.5rem;
+    
+}
+
+.mainProyectos li span{
+    padding: 15px;
+} 
+
+.mainProyectos li a{
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(150, 113, 3);
+    display: inline-block;
+}
+
+.mainProyectos li a:hover{
+    color: rgb(219, 189, 97);
+
+}
+
+/* Paginas de proyectos */
+
+.mainProyectosPaginas{
+    width:80%;
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectoBody{
+    border-radius:25px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content:space-around;
+    margin: 1% 5% ;
+    align-items: center;
+}
+
+.proyectoBody section{
+    width:40%;
+    margin: 5% ;
+
+    display: flex;
+    justify-content:center
+}
+
+.datosTecnicos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.datosTecnicos h3, .descSimple h3{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 30px;
+    text-align: center;
+}
+
+.datosTecnicos ul{
+    width:100%
+}
+
+.datosTecnicos li{
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content:space-between
+}
+
+
+.descSimple{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.descSimple h4{
+    text-align: center;
+    margin:  0 0 50px;
+}
+
+.imgProyecto img{
+    width:80%;
+    object-fit:cover;
+    border-radius:10px
+}
+
+/* Acerca de nostros */
+
+.sectionAcerca{
+    display:flex;
+    align-items: center;
+    height:30vh;
+    justify-content:center;
+}
+
+.sectionAcerca h2 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.mainAcerca{
+    width:80%;
+    margin: 0 10% 5%;
+    text-align: center;
+}
+
+.sectionNosotros{
+    margin: 5%;
+    font-size: 1.35em;
+    line-height: 1.5em;
+}
+
+.sectionNosotros h2{
+    margin: 3% 0;
+}
+
+.sectionNosotros p{
+    margin: 3% 0;
+}
+
+.contentAlianza{
+    display: flex;
+    justify-content:space-around;
+}
+
+.contentAlianzaUnico{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:35%;
+    margin: 5%;
+}
+.contentAlianzaUnico .beming{
+    padding:10px;
+    background: #302c2c;
+    border-radius: 15px;
+}
+
+.contentAlianzaUnico img{
+    object-fit: contain;
+    width:100%;
+}
+
+.mapDesk{
+    display: block;
+}
+
+.mapMobile{
+    display:none;
+}
+
+/* Menu Hamburguesa*/
+
+
+@media (max-width: 1023px) {
+
+    header{
+        width:100%;
+    }
+
+    nav{
+        height:auto;
+        width:100%;
+    }
+
+    .navbarNormal{
+        display:none
+    }
+
+    .listNav{
+        flex-direction: column;
+        align-items: center;
+        font-size:4em;
+        margin-top:5%;
+    }
+    
+    .backMain{
+        padding: 10vh 0;
+    }
+
+    .linkNav{
+        padding: 5% 0;
+    }
+    
+    .navbar {
+        position: relative;
+        min-height: 48px;
+        height:100%;
+        flex-direction: column;
+    }
+
+    .navLogo a, .navbar img{
+        width:35%
+    }
+
+    .tituloNav{
+        width:100% !important
+    }
+
+    .headerInicio, .headerServicios{
+        height:auto;
+    }
+
+    .presentacionBaja{
+        padding: 5%;
+    }
+    
+    .box{
+        transform: translateX(0);
+        padding: 5%;
+        transition: none;
+        visibility:visible;
+    }
+
+    .box:nth-of-type(even){
+        transform: translateX(0%)
+    }
+
+
+
+
+    /* Proyectos */
+
+    .mainProyectosPaginas{
+        width: 90%;
+        margin: auto 5%;
+    }
+
+    .mainProyectosPaginas h4{
+        font-size: 2.5em;
+        margin: 15% 0;
+    }
+
+    .mainProyectosPaginas p{
+        font-size: 1.5em;
+        padding: 2.5%;
+    }
+
+    .proyectoBody{
+        flex-direction: column;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .proyectoBody section{
+        width: 90%;
+        margin: 0 5% 12%  ;
+    }
+
+    .spanDerCaract{
+        text-align: end;
+    }
+
+    .proyectoBody ul{
+        padding: 0;
+        margin: 5%;
+    }
+
+    .proyectoBody li{
+        margin: 0 5%;
+    }
+
+    /* Contacto */
+    
+    .mainContact{
+        margin: 0 1%;
+    }
+
+    .mainContact h3{
+        font-size: 2.5em;
+    }
+
+    .contentCard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactoCard{
+        width:95%;
+        margin: 20px 0px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px){
+    
+    /* Index */
+
+    .box{
+        flex-direction: column;
+    }
+
+    .boxImg{
+        display: none;
+    }
+
+    .topPresentacionSolu{
+        background-position: center;
+    }
+
+    .presentacionSolu{
+        text-align: center;
+    }
+
+    .presentacionSolu span{ 
+        padding: 5%;
+    }
+
+    .divVerMas{
+        width: 100%;
+    }
+
+    .btnVerMas{
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentacionSolu{
+        padding: 25vh;
+    }
+
+    /* Servicios */
+
+    .mainServicios section{
+        flex-direction: column;
+    }
+
+    .mainServicios p{
+        padding:5% 5%;
+        width:95%;
+    }
+
+    .mainServicios img{
+        width: 80%;
+        margin-bottom: 10% ;
+    }
+
+    /* Proyectos */
+
+    .mainProyectos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectoTipoTitulo{
+        margin-top: 10%;
+    }
+
+
+    .mainProyectosPaginas p{
+        font-size: .9em;
+    }
+
+    /* Acerca de nosotros */
+
+    .sectionNosotros{
+        margin: 15% auto;
+    }
+
+    .contentAlianzaUnico{
+        margin: 5% 0;
+        width: 40%;
+    }
+
+    .mainProyectos li{
+        border-bottom: 1px solid black;
+    }
+
+    .mainProyectos ul{
+        margin-bottom:0;
+        padding-left: 0 ;
+    }    
+
+    .footerContact{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .navLogo a{
+        width:30%
+    }
+
+    .tituloNav{
+        display:none !important
+    }
+
+    .navbar img{
+        width:80%
+    }
+
+    .headerTitulo h2{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 5%;
+    }
+
+    /* Index */
+
+    .boxText{
+        font-size: 1em;
+    }
+
+    .presentacionSolu{
+        padding: 20vh;
+    }
+
+    /* Servicios */
+
+    .mainServicios{
+        margin: 5% 2.5%;
+    }
+
+    .mainServicios p{
+        font-size: .8em;
+    }
+
+    /* Acerca de nosotros */
+
+    .mainAcerca{
+        margin: auto 5%;
+        width: 90%;
+    }
+
+    .sectionAcerca{
+        padding: 0 5%;
+        font-size: .8;
+        text-align: center;
+    }
+
+    .sectionNosotros h2{
+        margin:15% 0
+    }
+
+    .sectionNosotros p {
+        font-size: .8em;
+    }
+    .contentAlianza {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentAlianzaUnico{
+        width:80%;
+        margin: 15% 0;
+    }
+
+
+    .contactFott{
+        margin:0;
+        width: 100%;
+    }
+
+    .mapDesk{
+        display: none;
+    }
+
+    .mapMobile{
+        display:block
+    }
+
+    .textInsti h5{
+        font-size: .85em;
+        text-align: center;
+    }
+}

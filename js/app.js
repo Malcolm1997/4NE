@@ -11,3 +11,8 @@ const checkBoxes = () => {
 
 window.addEventListener("scroll", checkBoxes);
 checkBoxes()
+
+
+const volverA = (pagina) => {
+    window.open(``, "_self");
+}
