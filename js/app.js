@@ -12,7 +12,19 @@ const checkBoxes = () => {
 window.addEventListener("scroll", checkBoxes);
 checkBoxes()
 
+let paginaElegida
 
-const volverA = (pagina) => {
-    window.open(``, "_self");
+window.addEventListener('load', () => {
+    paginaElegida = localStorage.getItem("paginaElegida")
+})
+
+const tipoDePagina = (tipo) => {
+    paginaElegida = tipo
+    console.log(paginaElegida);
+    localStorage.setItem("paginaElegida", paginaElegida);
 }
+
+const irA = (pagina) => {
+    window.open(`./Page ${paginaElegida}/${pagina}.html`, "_self");
+}
+
