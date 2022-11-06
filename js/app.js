@@ -12,7 +12,7 @@ const checkBoxes = () => {
 window.addEventListener("scroll", checkBoxes);
 checkBoxes()
 
-let paginaElegida
+let paginaElegida = "Hidrogenos"
 
 window.addEventListener('load', () => {
     paginaElegida = localStorage.getItem("paginaElegida")
@@ -20,7 +20,6 @@ window.addEventListener('load', () => {
 
 const tipoDePagina = (tipo) => {
     paginaElegida = tipo
-    console.log(paginaElegida);
     localStorage.setItem("paginaElegida", paginaElegida);
 }
 
