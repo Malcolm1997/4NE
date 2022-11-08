@@ -257,16 +257,28 @@ a{
     transform: translateX(0)
 }
 
-.boxImg, .boxText{
+.boxText{
     padding: 0 5%;
     font-size: 1.5em;
-    height:50%;
+    width:55%;
+}
+
+.boxImg{
+    padding: 0 5%;
+    font-size: 1.5em;
+    width:45%;
 }
 
 
+.boxText h2{
+    text-align: center;
+    font-size:2em;
+    font-weight: 500;
+}
+
 .boxText h3{
     text-align: center;
-    font-size:3em;
+    font-size:1.8em;
     font-weight: 500;
 }
 
@@ -275,9 +287,24 @@ a{
     padding: 8px 0;
 }
 
+.boxNoticiaText,.boxNoticiaImg {
+    width: 90%;
+    margin: 0 5%;
+}
+
 .divVerMas{
     display:flex;
     justify-content:flex-end;
+}
+
+.divVerMasNoticia{
+    justify-content: center;
+
+}
+
+.divVerMasNoticia a{
+    width: 75%;
+    text-align: center;
 }
 
 .btnVerMas{
@@ -326,7 +353,6 @@ a{
 }
 
 .topPresentacionSolu{
-    background: url(../img/BG1_low.webp) no-repeat;
     background-size: cover;
     height:75%;
     background-attachment: fixed;
@@ -360,7 +386,6 @@ a{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 5%;
     border-radius: 10px;
-    background: url(../img/Ingenieria.webp);
     background-size:cover;
 }
 
@@ -396,7 +421,6 @@ a{
 /* Paginas de Servicios */
 
 .headerTitulo{
-    background: url(../img/fondoPortada.webp) no-repeat;
     background-size: cover;
     height:50vh;
     font-size: 2.5em;
