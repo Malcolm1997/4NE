@@ -26,31 +26,9 @@
                 </section>
                 <nav>
                     <ul class="listNav">
-                        <li><a href="#" onclick="irA('indexPrincipal')" class="linkNav">Inicio</a></li>
-                        <li><a href="#" onclick="irA('servicios')" class="linkNav">Servicios</a>
-                            <ul>
-                                <li><a href="#" onclick="irA('fracking')">Fracking</a></li>
-                                <li><a href="#" onclick="irA('fracking')">Oil & Gas</a></li>
-                                <li><a href="#" onclick="irA('fracking')">Soluciones</a></li>
-                                <li><a href="#" onclick="irA('fracking')">Ingenieria</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" onclick="irA('proyectos')" class="linkNav">Proyectos</a>
-                            <ul>
-                                <li><a href="#">Nuevo</a>
-                                    <ul>
-                                        <li><a href="#" onclick="irA('proyecto1')">Neuquen</a></li>
-                                        <li><a href="#" onclick="irA('proyecto1')">Tu chascomus</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Viejo</a>
-                                    <ul>
-                                        <li><a href="#" onclick="irA('proyecto1')">Nuequen</a></li>
-                                        <li><a href="#" onclick="irA('proyecto1')">Chascomus</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a href="#" onclick="irA('indexPrincipal', -1)" class="linkNav">Inicio</a></li>
+                        <li><a href="#" onclick="irA('servicios', -1)" class="linkNav">Servicios</a></li>
+                        <li><a href="#" onclick="irA('proyectos', -1)" class="linkNav">Proyectos</a></li>
                         <li><a href="./acercaDeNosotros.html"  class="linkNav">Acerca de nosotros</a></li>
                         <li><a href="./contacto.html" class="linkNav">Contacto</a></li>
                     </ul>
@@ -79,62 +57,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#" onclick="irA('indexPrincipal')">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="#" onclick="irA('indexPrincipal', -1)">Inicio</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Servicios
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#" onclick="irA('servicios')">Todos los Servicios</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li class="dropdown-item"></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('fracking')">Fracking</a></li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('fracking')">Oil & Gas</a></li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('fracking')">Ingenieria</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="irA('servicios', -1)" >Servicios</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Proyectos
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#" onclick="irA('proyectos')">Todos los Proyectos</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li class="dropdown-item"></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li class="dropdown-item">Nuevos</li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-        
-                                        <li><a class="dropdown-item" href="#" onclick="irA('proyecto1')">Neuquen</a></li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('proyecto1')">Salta</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li class="dropdown-item"></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li class="dropdown-item">Viejos</li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('proyecto1')">Neuquen</a></li>
-                                        <li><a class="dropdown-item" href="#" onclick="irA('proyecto1')">Neuq</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="irA('proyectos', -1)" >Proyectos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./acercaDeNosotros.html">Acerca de nosotros</a>

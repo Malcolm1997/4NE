@@ -307,6 +307,18 @@ a{
     text-align: center;
 }
 
+.divVerMasServicios{
+    margin-bottom: 2%;
+    width: 100%;
+    justify-content: center;
+}
+
+.divVerMasServicios a {
+    width: 70%;
+    text-align: center;
+    margin: 0 5% 2%;
+}
+
 .btnVerMas{
     margin: 20px 0px;
     padding: 10px 30px ;
@@ -442,7 +454,8 @@ a{
     color: white;
     font-weight: 300;
     font-size: 2em;
-
+    text-align: center;
+    margin: 2.5%;
 }
 
 .mainServicios{
@@ -455,25 +468,28 @@ a{
 
 .mainServicios h3{
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 5% 0;
 }
 
 .mainServicios section{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size:1.5em
 }
 
 .mainServicios p{
-    width:45%;
+    width:80%;
     display:inline-block;
+    margin: 0 0 5%;
 }
 
 .mainServicios img{
-    width:30%;
+    width:70%;
     border-radius: 15px;
+    margin: 7.5% 0;
 }
 
 /* Proyectos */
@@ -898,10 +914,11 @@ a{
     }
 
     .headerTitulo h2{
-        font-size: 1.5em;
+        font-size: 1.25em;
         text-align: center;
         margin: 0 5%;
     }
+
 
     /* Index */
 
