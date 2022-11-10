@@ -179,7 +179,7 @@ nav{
 }
 
 .listNav li ul li ul{
-    right: -140px;
+    left: 140px;
     top: -1px
 }
 
