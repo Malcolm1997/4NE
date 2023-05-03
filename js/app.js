@@ -15,7 +15,7 @@ checkBoxes()
 let paginaElegida
 
 if(localStorage.getItem("paginaElegida") == null){
-    paginaElegida = "Hidrogenos"
+    paginaElegida = "h"
 } else {
     paginaElegida = localStorage.getItem("paginaElegida")
 }
@@ -28,7 +28,7 @@ let paginasDeRecursos = {
     'renovables' : {
         'servicios': {
             'linkName': ['RSU', 'BioGas'],
-            'name':['asdTratamiento de RSU', 'Planta de BioGas']
+            'name':['Tratamiento de RSU', 'Planta de BioGas']
         },
         'proyectos': {
             'nuevo': {
@@ -61,7 +61,7 @@ let paginasDeRecursos = {
 
 const irA = (pagina) => {
     paginaUnica(false)
-    window.open(`./Page ${paginaElegida}/${pagina}.html`, "_self");
+    window.open(`./p${paginaElegida}/${pagina}.html`, "_self");
 }
 
 
@@ -76,7 +76,7 @@ let ulProyectosFinalizado = document.querySelectorAll(".proyectosFinalizados")
 let esUnica = localStorage.getItem("esUnica")
 ulServicios.innerHTML = ""
 
-if (paginaElegida == 'Renovables') {
+if (paginaElegida == 'r') {
     // Renderiza Servicios
     for (let i = 0; i < paginasDeRecursos.renovables.servicios.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
