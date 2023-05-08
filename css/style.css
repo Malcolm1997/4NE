@@ -46,7 +46,7 @@ i{
 /* Fotter */
 
 footer{
-    background-color: rgba(221,206,159,0.86)
+    background-color: #8BB389
 
 }
 
@@ -70,9 +70,9 @@ footer{
     width: 50%;
 }
 
-.contactFott h3{
-    font-weight: 400;
-    margin: 20px 0;
+.contactFott h4{
+
+    color: #1f353d;
 
 }
 
@@ -83,7 +83,7 @@ footer{
 .textInsti{
     display: flex;
     justify-content: center;
-    background-color: #3a3a3a;
+    background-color: #1f353d;
     color: white;
     border-top: white 1px solid;
 }
@@ -125,7 +125,7 @@ nav{
 }
 
 .navbar{
-    background-color: rgba(221,206,159,0.86);
+    background-color: rgba(139, 179, 137);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -163,7 +163,7 @@ nav{
 }
 
 .listNav > li:hover{
-    background:rgba(221,206,159,0.86)
+    background:rgb(108, 153, 104)
 }
 
 .listNav li ul li {
@@ -185,7 +185,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: #3a3a3a;
+    color: #1f353d;
     display:block;
 }
 
@@ -218,7 +218,7 @@ a{
 }
 
 .presentacionBaja{
-    background-color: rgba(221,206,159,1) ;
+    background-color: rgba(139, 179, 137);
     text-align: center;
     padding: 35px 0;
     font-size: 1.5em;
@@ -975,6 +975,7 @@ a{
         margin:0;
         width: 100%;
     }
+
 
     .mapDesk{
         display: none;
