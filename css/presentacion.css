@@ -77,4 +77,23 @@ div:hover .overlay .logoSeleccionable{
     .overlay a span{
         font-size: .75em;
     }
+
+    div .overlay {
+        opacity: .95;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    div{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .imgPresentacion{
+        width: 100vw;
+        height: 50vh;
+    }
+
 }

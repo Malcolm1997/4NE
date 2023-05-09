@@ -218,7 +218,7 @@ a{
 }
 
 .presentacionBaja{
-    background-color: rgba(139, 179, 137);
+    background-color: rgba(139, 184, 136,.9) ;
     text-align: center;
     padding: 35px 0;
     font-size: 1.5em;
