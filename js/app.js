@@ -41,6 +41,7 @@ let paginasDeRecursos = {
             }
         },
     },
+    //HIDROCARBUROS
     'hidrocarburos': {
         'servicios':{
             'linkName': ['Fracking', 'Gasoductos'],
@@ -48,12 +49,12 @@ let paginasDeRecursos = {
         },
         'proyectos':{
             'nuevo':{
-                'linkName': ['Nestor', 'BioGas'],
-                'name':[' Nuevo Gasoducto Nestor Kirchner', 'Planta de BioGas']
+                'linkName': ['Nestor', 'LinderoAtravesado'],
+                'name':[' Nuevo Gasoducto Nestor Kirchner', 'Yacimiento en Lindero Atravesado']
             },
             'finalizado':{
-                'linkName': ['Nestor', 'BioGas'],
-                'name':['Viejo Gasoducto Nestor Kirchner', 'Planta de BioGas']
+                'linkName': ['Nestor', 'LinderoAtravesado', 'Nogales'],
+                'name':['Viejo Gasoducto Nestor Kirchner', 'Yacimiento en Lindero Atravesado', 'Los Nogales']
             }
         },
     }
@@ -76,11 +77,11 @@ let ulProyectosFinalizado = document.querySelectorAll(".proyectosFinalizados")
 let esUnica = localStorage.getItem("esUnica")
 ulServicios.innerHTML = ""
 
-if (paginaElegida == 'r') {
+if (paginaElegida == 'r' ) {
     // Renderiza Servicios
     for (let i = 0; i < paginasDeRecursos.renovables.servicios.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulServicios.forEach( el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Renovables/servicios${paginasDeRecursos.renovables.servicios.linkName[i]}.html" onclick="paginaUnica(false)" >${paginasDeRecursos.renovables.servicios.name[i]}</a></li>`)
+            ulServicios.forEach( el => el.innerHTML += `<li class="dropdown-item" ><a href="./pr/servicios${paginasDeRecursos.renovables.servicios.linkName[i]}.html" onclick="paginaUnica(false)" >${paginasDeRecursos.renovables.servicios.name[i]}</a></li>`)
         } else {
             ulServicios.forEach( el => el.innerHTML += `<li class="dropdown-item" ><a href="./servicios${paginasDeRecursos.renovables.servicios.linkName[i]}.html" >${paginasDeRecursos.renovables.servicios.name[i]}</a></li>`)
         }
@@ -88,7 +89,7 @@ if (paginaElegida == 'r') {
     // Renderiza Proyectos nuevos
     for (let i = 0; i < paginasDeRecursos.renovables.proyectos.nuevo.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Renovables/proyecto${paginasDeRecursos.renovables.proyectos.nuevo.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.renovables.proyectos.nuevo.name[i]}</a></li>`)
+            ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./pr/proyecto${paginasDeRecursos.renovables.proyectos.nuevo.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.renovables.proyectos.nuevo.name[i]}</a></li>`)
         } else {
             ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./proyecto${paginasDeRecursos.renovables.proyectos.nuevo.linkName[i]}.html" >${paginasDeRecursos.renovables.proyectos.nuevo.name[i]}</a></li>`)
         }
@@ -96,7 +97,7 @@ if (paginaElegida == 'r') {
     //Renderiza Proyectos Terminados
     for (let i = 0; i < paginasDeRecursos.renovables.proyectos.finalizado.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Renovables/proyecto${paginasDeRecursos.renovables.proyectos.finalizado.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.renovables.proyectos.finalizado.name[i]}</a></li>`)
+            ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./pr/proyecto${paginasDeRecursos.renovables.proyectos.finalizado.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.renovables.proyectos.finalizado.name[i]}</a></li>`)
         } else {
             ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./proyecto${paginasDeRecursos.renovables.proyectos.finalizado.linkName[i]}.html" >${paginasDeRecursos.renovables.proyectos.finalizado.name[i]}</a></li>`)
         }
@@ -105,7 +106,7 @@ if (paginaElegida == 'r') {
     //Renderiza Servicios
     for (let i = 0; i < paginasDeRecursos.hidrocarburos.servicios.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulServicios.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Hidrogenos/servicios${paginasDeRecursos.hidrocarburos.servicios.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.servicios.name[i]}</a></li>`)
+            ulServicios.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./ph/servicios${paginasDeRecursos.hidrocarburos.servicios.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.servicios.name[i]}</a></li>`)
         } else {
             ulServicios.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./servicios${paginasDeRecursos.hidrocarburos.servicios.linkName[i]}.html" >${paginasDeRecursos.hidrocarburos.servicios.name[i]}</a></li>`)
         }
@@ -113,7 +114,7 @@ if (paginaElegida == 'r') {
     //Renderiza Proyectos Nuevos
     for (let i = 0; i < paginasDeRecursos.hidrocarburos.proyectos.nuevo.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Hidrogenos/proyecto${paginasDeRecursos.hidrocarburos.proyectos.nuevo.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.proyectos.nuevo.name[i]}</a></li>`)
+            ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./ph/proyecto${paginasDeRecursos.hidrocarburos.proyectos.nuevo.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.proyectos.nuevo.name[i]}</a></li>`)
         } else {
             ulProyectosNuevos.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./proyecto${paginasDeRecursos.hidrocarburos.proyectos.nuevo.linkName[i]}.html" >${paginasDeRecursos.hidrocarburos.proyectos.nuevo.name[i]}</a></li>`)
         }
@@ -121,7 +122,7 @@ if (paginaElegida == 'r') {
     //Renderiza Proyectos Terminados
     for (let i = 0; i < paginasDeRecursos.hidrocarburos.proyectos.finalizado.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
-            ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./Page Hidrogenos/proyecto${paginasDeRecursos.hidrocarburos.proyectos.finalizado.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.proyectos.finalizado.name[i]}</a></li>`)
+            ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./ph/proyecto${paginasDeRecursos.hidrocarburos.proyectos.finalizado.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.proyectos.finalizado.name[i]}</a></li>`)
         } else {
             ulProyectosFinalizado.forEach(el => el.innerHTML += `<li class="dropdown-item" ><a href="./proyecto${paginasDeRecursos.hidrocarburos.proyectos.finalizado.linkName[i]}.html" >${paginasDeRecursos.hidrocarburos.proyectos.finalizado.name[i]}</a></li>`)
         }
