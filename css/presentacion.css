@@ -52,6 +52,7 @@ div:hover .overlay {
     padding-top: 15px;
     color: #646c65;
     font-size: 1.5em;
+    text-align: center;
 }
 
 div:hover .overlay .logoSeleccionable{
@@ -80,6 +81,11 @@ div:hover .overlay .logoSeleccionable{
 
     div .overlay {
         opacity: .95;
+    }
+
+    
+    .logoSeleccionable {
+        width: 50%;
     }
 
     body{
