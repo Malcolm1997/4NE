@@ -27,13 +27,13 @@ const tipoDePagina = (atributo, tipo) => {
 let paginasDeRecursos = {
     'renovables' : {
         'servicios': {
-            'linkName': [],
-            'name':[]
+            'linkName': ['','','','',''],
+            'name':['Desarrollo Integral de RSU', 'Desarrollo Integral de Centrales Fotovoltaicas', 'Desarrollo Integral de Planta de BioGas', 'Desarrollo de Biofertilizantes', 'Desarrollos Personalizados']
         },
         'proyectos': {
             'nuevo': {
-                'linkName': [],
-                'name':[]
+                'linkName': ['RSUChicas'],
+                'name':['RSU - Las Chicas, Córdoba']
             },
             'finalizado': {
                 'linkName': ['Aerogenerador', 'RenovarTrebol', 'Potrerillo', 'Cacheuta', 'Ullum', 'Biof', 'LasJunturas', 'LaPampa', 'Goldpor', 'BiogasFenix', 'IlPorco', 'Forsu', 'LosLLanos', 'SanAlonso', 'Solares'],
@@ -44,17 +44,17 @@ let paginasDeRecursos = {
     //HIDROCARBUROS
     'hidrocarburos': {
         'servicios':{
-            'linkName': [],
-            'name':[]
+            'linkName': ['','','','','','',''],
+            'name':['Oil & Gas', 'Ingeniería Eléctrica', 'Ingeniería Mecánica', 'Deasarrollo en Energia Nuclear', 'Desarrollo Integral en la Agroindustria', 'Desarrollos Integrales en Mineria', 'Desarrllo Personalizados']
         },
         'proyectos':{
             'nuevo':{
-                'linkName': [],
-                'name':[]
+                'linkName': ['Nestor'],
+                'name':['Gasoducto Nestor Kirchner']
             },
             'finalizado':{
-                'linkName': ['Nestor', 'LinderoAtravesado', 'Nogales', 'BellVille', 'Hitachi', 'Embalse', 'Cargil', 'Tolva', 'Algodon', 'CarpasArgentinas'],
-                'name':['Viejo Gasoducto Nestor Kirchner', 'Yacimiento en Lindero Atravesado', 'Los Nogales', 'Bell Ville', 'Hitachi Energy', 'Central Atomica Embalse', 'Provimi (Cargil)', 'Tolva Autodescargable', 'Cocechadora de Alghodon', 'Mina de Litio - Catamarca']
+                'linkName': ['LinderoAtravesado', 'Nogales', 'BellVille', 'Hitachi', 'Embalse', 'Cargil', 'Tolva', 'Algodon', 'CarpasArgentinas'],
+                'name':['Yacimiento en Lindero Atravesado', 'Los Nogales', 'Bell Ville', 'Hitachi Energy', 'Central Atomica Embalse', 'Provimi (Cargil)', 'Tolva Autodescargable', 'Cocechadora de Alghodon', 'Mina de Litio - Catamarca']
             }
         },
     }
@@ -76,18 +76,19 @@ let ulProyectosNuevos = document.querySelectorAll(".proyectosNuevos")
 let ulProyectosFinalizado = document.querySelectorAll(".proyectosFinalizados")
 let ulEnObra = document.querySelectorAll("#proyectosEnObra")
 let ulFinalizado = document.querySelectorAll("#proyectosTerminados")
+let seccionServicios = document.querySelectorAll("#mainServicios")
 let esUnica = localStorage.getItem("esUnica")
 ulServicios.innerHTML = ""
 
 if (paginaElegida == 'r' ) {
-    // Renderiza Servicios
+/*     // Renderiza Servicios
     for (let i = 0; i < paginasDeRecursos.renovables.servicios.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
             ulServicios.forEach( el => el.innerHTML += `<br class="espaciadoBR"><li class="dropdown-item" ><a class="linkPage" href="./pr/servicios${paginasDeRecursos.renovables.servicios.linkName[i]}.html" onclick="paginaUnica(false)" >${paginasDeRecursos.renovables.servicios.name[i]}</a></li>`)
         } else {
             ulServicios.forEach( el => el.innerHTML += `<br class="espaciadoBR"><li class="dropdown-item" ><a class="linkPage" href="./servicios${paginasDeRecursos.renovables.servicios.linkName[i]}.html" >${paginasDeRecursos.renovables.servicios.name[i]}</a></li>`)
         }
-    }
+    } */
     // Renderiza Proyectos nuevos
     for (let i = 0; i < paginasDeRecursos.renovables.proyectos.nuevo.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
@@ -105,6 +106,18 @@ if (paginaElegida == 'r' ) {
         }
     }
     
+    for(let i = 0; i < paginasDeRecursos.renovables.servicios.linkName.length; i++){
+        seccionServicios.forEach(el => {
+            el.innerHTML += `
+                    <section class="cardServicios">
+                        <div>
+                            <h3>${paginasDeRecursos.renovables.servicios.name[i]}</h3>
+                        </div>
+                    <section>
+                `
+        })
+    }
+
     //Renderiza Proyectos Nuevos En Pagina Proyecto
     for(let i = 0; i < paginasDeRecursos.renovables.proyectos.nuevo.linkName.length; i++){
         ulEnObra.forEach(el => {
@@ -134,14 +147,14 @@ if (paginaElegida == 'r' ) {
     }
 
 } else {
-    //Renderiza Servicios
+/*     //Renderiza Servicios
     for (let i = 0; i < paginasDeRecursos.hidrocarburos.servicios.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
             ulServicios.forEach(el => el.innerHTML += `<br class="espaciadoBR"><li class="dropdown-item" ><a class="linkPage" href="./ph/servicios${paginasDeRecursos.hidrocarburos.servicios.linkName[i]}.html" onclick="paginaUnica(false)">${paginasDeRecursos.hidrocarburos.servicios.name[i]}</a></li>`)
         } else {
             ulServicios.forEach(el => el.innerHTML += `<br class="espaciadoBR"><li class="dropdown-item" ><a class="linkPage" href="./servicios${paginasDeRecursos.hidrocarburos.servicios.linkName[i]}.html" >${paginasDeRecursos.hidrocarburos.servicios.name[i]}</a></li>`)
         }
-    }
+    } */
     //Renderiza Proyectos Nuevos
     for (let i = 0; i < paginasDeRecursos.hidrocarburos.proyectos.nuevo.linkName.length; i++) {
         if (localStorage.getItem("esUnica") == 'true') {
@@ -157,6 +170,18 @@ if (paginaElegida == 'r' ) {
         } else {
             ulProyectosFinalizado.forEach(el => el.innerHTML += `<br class="espaciadoBR"><li class="dropdown-item" ><a class="linkPage" href="./proyecto${paginasDeRecursos.hidrocarburos.proyectos.finalizado.linkName[i]}.html" >${paginasDeRecursos.hidrocarburos.proyectos.finalizado.name[i]}</a></li>`)
         }
+    }
+
+    for(let i = 0; i < paginasDeRecursos.hidrocarburos.servicios.linkName.length; i++){
+        seccionServicios.forEach(el => {
+            el.innerHTML += `
+                    <section class="cardServicios">
+                        <div>
+                            <h3>${paginasDeRecursos.hidrocarburos.servicios.name[i]}</h3>
+                        </div>
+                    <section>
+                `
+        })
     }
 
     //Renderiza Proyectos Nuevos En Pagina Proyecto

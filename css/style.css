@@ -80,6 +80,11 @@ footer{
     margin: 10px 0;
 }
 
+.direcc{
+    text-align: center;
+    color: #1f353d;
+}
+
 .textInsti{
     display: flex;
     justify-content: center;
@@ -399,7 +404,7 @@ a{
 
 .cardServicios{
     width:35vh;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
     margin: 5%;
     border-radius: 10px;
     background-size:cover;
@@ -413,7 +418,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     background: rgba(0,0,0,.5);
 }
 
@@ -421,7 +426,7 @@ a{
     margin: 15% 0;
     color: white;
     font-size:2rem;
-    font-weight: 500;
+    font-weight: 400;
     padding: 1%  5%;
     border-radius: 5px;
 }
@@ -496,6 +501,11 @@ a{
     margin: 7.5% 0;
 }
 
+.datosTecnicos span{
+    white-space: normal;
+    text-align: end;
+}
+
 /* Proyectos */
 
 .mainProyectos{
@@ -549,6 +559,11 @@ a{
     flex-direction: column;
 }
 
+.mainProyectosPaginas h4{ 
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
 .proyectoBody{
     border-radius:25px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -556,12 +571,12 @@ a{
     justify-content:space-around;
     margin: 1% 5% ;
     align-items: center;
+    flex-direction: column;
 }
 
 .proyectoBody section{
-    width:40%;
-    margin: 5% ;
-
+    width:80%;
+    margin: 5% 10%;
     display: flex;
     justify-content:center
 }
@@ -821,6 +836,9 @@ a{
         flex-direction: column;
     }
 
+    .boxText{
+        width: 80%;
+    }
     .boxImg{
         display: none;
     }
@@ -911,6 +929,10 @@ a{
         flex-direction: column;
     }
 
+    .direcc{
+        margin-top: 25px;
+    }
+
 }
 
 @media (max-width: 530px) {
@@ -949,6 +971,12 @@ a{
 
     .headerTitulo h2{
         font-size: 1.25em;
+    }
+
+    /* Proyectos */
+
+    .mainProyectosPaginas h4{
+        font-size: 2em;
     }
 
     /* Acerca de nosotros */
@@ -1000,11 +1028,15 @@ a{
         font-size: .85em;
         text-align: center;
     }
+
+    .navbar-nav ul{
+        padding-left: 0;
+    }
 }
 
 
-@media (max-width: 530px) {
-    .navbar-nav ul{
-        padding-left: 0;
+@media (max-width: 375px){
+    .boxText{
+        width: 90%;
     }
 }

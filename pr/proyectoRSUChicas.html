@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4NE - Proyectos - Renovables</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../img/4NELogo.ico"/>
+        <link rel="stylesheet" href="./css/styleR.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="headerProyecto">
+            <section class="navbar navbarNormal">
+                <section class="navLogo">
+                    <a title="Ir al Inicio" href="./indexPrincipal.html">
+                        <img src="../img/4NELogo.webp" alt="">
+                    </a>
+                    <a href="./indexPrincipal.html">
+                        <h1>Four Natural Energy</h1>
+                    </a>
+                </section>
+                <nav>
+                    <ul class="listNav">
+                        <li><a href="./indexPrincipal.html" class="linkNav">Inicio</a></li>
+                        <li><a href="./servicios.html" class="linkNav">Servicios</a>
+
+                        </li>
+                        <li><a href="./proyectos.html" class="linkNav">Proyectos</a>
+                            <ul>
+                                <li><a href="#">En Obra</a>
+                                    <ul class="proyectosNuevos">
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">Terminados</a>
+                                    <ul class="proyectosFinalizados">
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../acercaDeNosotros.html" onclick="paginaUnica(true)" class="linkNav">Acerca de nosotros</a></li>
+                        <li><a href="../contacto.html" onclick="paginaUnica(true)" class="linkNav">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <nav class="navbar navbarHambuguesa fixed-top">
+                <div class="container-fluid flex-nowrap">
+                    <section class="navLogo">
+                        <a title="Ir al Inicio" href="./indexPrincipal.html">
+                            <img src="../img/4NELogo.webp" alt="">
+                        </a>
+                        <a href="./indexPrincipal.html" class="tituloNav">
+                            <h1>Four Natural Energy</h1>
+                        </a>
+                    </section>
+                    <button title="Menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu de navegacion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./indexPrincipal.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Servicios
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./servicios.html">Todos los Servicios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-item"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <ul class="servicios">
+
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Proyectos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./proyectos.html">Todos los Proyectos</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-item"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-item">En Obra</li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <ul class="proyectosNuevos">
+
+                                        </ul>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-item"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-item">Terminados</li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <ul class="proyectosFinalizados">
+
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="paginaUnica(true)" href="../acercaDeNosotros.html">Acerca de nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="paginaUnica(true)" href="../contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="headerTitulo">
+                <div>
+                    <h2>RSU - Las Chicas, Rosario</h2>
+                </div>
+            </section>
+            
+        </header>
+        <main class="mainProyectosPaginas">  
+            <section class="proyectoBody">
+                <section class="descSimple">
+                    <h3>Descripcion</h3>
+                        <p>Actualmente nos encontramos trabajando en el desarrollo de una planta de tratamiento de RSU (residuos sólidos urbanos) en Las Chicas, Córdoba. Esta planta utiliza un proceso biomecánico para el tratamiento de los residuos, que consiste en una forma ambientalmente adecuada de abordar el manejo de la "basura". La parte "BIO" se refiere a la transformación de la fracción orgánica en biogás a través de la fermentación, mientras que la parte "MECÁNICA" se refiere al proceso de separación entre la fracción orgánica y la fracción sintética mediante la acción mecánica de torsión.
+                        <br>
+                        <br>
+                        Además, este proceso de transformación también incluye la obtención de productos de FLAKE, que son el resultado de extraer la parte orgánica de los residuos sintéticos. Para lograr esto, utilizamos equipos innovadores capaces de mezclar y homogeneizar diferentes tipos de polímeros y cargas inertes, transformándolos en un compuesto termoplástico que puede moldearse en diversos productos, como ladrillos, pisos, láminas, bordillos, tuberías y muchos otros artículos, utilizando moldes especializados.
+                    </p>
+                </section>
+                <section class="imgProyecto">
+                    <img src="./img/digestor.webp" alt="">
+                </section>
+                <div class="divVerMas divVerMasServicios">
+                    <a href="./file/Recuperación RSU.pdf" target="_blank" class="btnVerMas">Ver Mas</a>
+                </div>
+            </section>
+            <section class="proyectoBody">
+                <section class="datosTecnicos">
+                    <h3>Caracteristicas</h3>
+                    <ul>
+                        <li><span>Cliente</span><span>YPF Luz - Bezer</span></li>
+                        <li><span>Ubicacion</span><span>Las Chicas - Córdoba</span></li>
+                        <li><span>Inicio del proyecto</span><span>2023</span></li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <section class="footerContact">
+                <section class="contactFott">
+                    <img src="../img/4NE.webp" alt="">
+                    <h4>Four Natural Energy</h4>
+                    <span>
+                        <a title="Linkedin Oficial" class="linkFooter" href="https://www.linkedin.com/company/four-natural-energy/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-3x"></i>
+                        </a> 
+                    </span>
+                </section>
+                <section class="direcc">
+                    <section>
+                        <h4>Oficina Comercial</h4>
+                        <p>Pichincha 54 Bis</p>
+                        <p>Rosario, Santa Fe, Argentina</p>
+                    </section>
+                    <hr>
+                    <section>
+                        <h4>Planta Industrial</h4>
+                        <p>Parque Industrial Jorge Oldani</p>
+                        <p>RN A012 Km47</p>
+                        <p>Roldán, Santa Fe</p>
+                    </section>
+                </section>
+    
+            <section class="textInsti">
+                <h5>Four Natural Energy | Solutions & Enginering 2020 </h5>
+            </section>
+        
+        </footer>
+        <script src="../js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
