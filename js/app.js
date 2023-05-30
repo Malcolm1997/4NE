@@ -37,7 +37,7 @@ let paginasDeRecursos = {
             },
             'finalizado': {
                 'linkName': ['Aerogenerador', 'RenovarTrebol', 'Potrerillo', 'Cacheuta', 'Ullum', 'Biof', 'LasJunturas', 'LaPampa', 'Goldpor', 'BiogasFenix', 'IlPorco', 'Forsu', 'LosLLanos', 'SanAlonso', 'Solares'],
-                'name':['Ingenieria de producto IWP-100', 'Proyecto Renovar - PE El Trébol', 'Central Hidroelectrica de Potrerillo', 'Central Hidroelectrica de Cacheuta', 'Central Hidroelectrica de Ullum', 'Proyecto BioF', 'Embio - Las Junturas', 'Planta de Generación - La Pampa', 'Planta de Generación - Goldpor', 'Diseño de Planta de Biogas - Fenix', 'Evaluacion de factibilidad de Planta de Biogas - Il Porco', 'Forsu en Colombia', 'Frigorífico Cerdo de Los Llanos', 'Cental Térmica - San Alonso', 'Proyectos Solares' ]
+                'name':['Ingeniería de producto IWP-100', 'Proyecto Renovar - PE El Trébol', 'Central Hidroeléctrica de Potrerillo', 'Central Hidroeléctrica de Cacheuta', 'Central Hidroeléctrica de Ullum', 'Proyecto BioF', 'Embio - Las Junturas', 'Planta de generación - La Pampa', 'Planta de generación - Goldpor', 'Diseño de Planta de Biogás - Fenix', 'Evaluación de factibilidad de Planta de Biogás - Il. Porco', 'Forsu en Colombia', 'Frigorífico Cerdo de Los Llanos', 'Central Térmica - San Alonso', 'Proyectos Solares' ]
             }
         },
     },
@@ -45,16 +45,16 @@ let paginasDeRecursos = {
     'hidrocarburos': {
         'servicios':{
             'linkName': ['','','','','','',''],
-            'name':['Oil & Gas', 'Ingeniería Eléctrica', 'Ingeniería Mecánica', 'Deasarrollo en Energia Nuclear', 'Desarrollo Integral en la Agroindustria', 'Desarrollos Integrales en Mineria', 'Desarrllo Personalizados']
+            'name':['Oil & Gas', 'Ingeniería Eléctrica', 'Ingeniería Mecánica', 'Desarrollo en Energía Nuclear', 'Desarrollo Integral en la Agroindustria', 'Desarrollos Integrales en Minería', 'Desarrollos Personalizados']
         },
         'proyectos':{
             'nuevo':{
                 'linkName': ['Nestor'],
-                'name':['Gasoducto Nestor Kirchner']
+                'name':['Gasoducto Néstor Kirchner']
             },
             'finalizado':{
                 'linkName': ['LinderoAtravesado', 'Nogales', 'BellVille', 'Hitachi', 'Embalse', 'Cargil', 'Tolva', 'Algodon', 'CarpasArgentinas'],
-                'name':['Yacimiento en Lindero Atravesado', 'Los Nogales', 'Bell Ville', 'Hitachi Energy', 'Central Atomica Embalse', 'Provimi (Cargil)', 'Tolva Autodescargable', 'Cocechadora de Alghodon', 'Mina de Litio - Catamarca']
+                'name':['Yacimiento en Lindero Atravesado', 'Los Nogales', 'Bell Ville', 'Hitachi Energy', 'Central Atómica Embalse', 'Provimi (Cargil)', 'Tolva Autodescargable', 'Cosechadora de Algodón', 'Mina de Litio - Catamarca']
             }
         },
     }
